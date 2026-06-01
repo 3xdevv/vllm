@@ -260,7 +260,7 @@ docker run --runtime nvidia --gpus all \
     -p 8000:8000 \
     --ipc=host \
     vllm/vllm-openai:latest \
-    --model Qwen/Qwen3-0.6B
+    Qwen/Qwen3-0.6B
 ```
 
 This image can also be used with other container engines such as [Podman](https://podman.io/).
@@ -272,7 +272,7 @@ podman run --device nvidia.com/gpu=all \
 -p 8000:8000 \
 --ipc=host \
 docker.io/vllm/vllm-openai:latest \
---model Qwen/Qwen3-0.6B
+Qwen/Qwen3-0.6B
 ```
 
 You can add any other [engine-args](https://docs.vllm.ai/en/latest/configuration/engine_args/) you need after the image tag (`vllm/vllm-openai:latest`).
